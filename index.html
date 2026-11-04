@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mejie | Web Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div id="navbar">
+    <div class="logo"> MEJIE's WEB PORTFOLIO</div>
+    <div class="menu">
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+      <button class="menubtn" onclick="toggleOthers()">Others</button>
+      <button id="themeBtn" onclick="toggleTheme()">&#127769;</button>
+    </div>
+  </div>
+
+  <div id="othersMenu"></div>
+
+  <div id="home">
+    <div class="avatar-box">
+      <img class="avatar" src="image.png" alt="Profile Picture">
+    </div>
+      <h4>Hello World! I'm</h4>
+    <h1>Mej Herry T. Herrera</h1>
+    <h3>BSIT Student | Aspiring Web Developer and Digital Creator</h3>
+    <p>I'm an Information Technology student who enjoying to explore more in the world of technology. I used to exploring codes and programming and building my skills in web development. I also enjoying the graphic designing, illustrating custom icons, building interactive UI/UX wireframe. As an beginner, I am eager to learn, take on new challenges, and continue improving my crafts as both developer and digital artist.</p>
+    <button class="btn" onclick="sayHello()">Say Hello</button>
+  </div>
+
+  <div class="card" id="about">
+    <h2>About Me</h2>
+    <p>I am a college student in the Philippines taking an IT-related course. I enjoy mixing technical skills with creative work, so I can build a project and design it too.</p>
+    <hr>
+    <h2>Personal Details</h2>
+    <table border="1">
+      <tr><th>Full Name</th><td>Mej Herry T. Herrera</td></tr>
+      <tr><th>Age</th><td>19 year old</td></tr>
+      <tr><th>Height / Weight</th><td>165cm / 60kg</td></tr>
+      <tr><th>Address</th><td>2368 Purok 5 Ornoza St., Sinagtala Subdivision, Malabanban Sur, Candelaria, Quezon</td></tr>
+      <tr><th>Gender</th><td>Male</td></tr>
+      <tr><th>Specialty</th><td>Web Development, Digital Art, Video Editing</td></tr>
+      <tr><th>Status</th><td>BSIT Student</td></tr>
+      <tr><th>Nationality</th><td>Philippine</td></tr>
+      <tr><th>Languages</th><td>English, Filipino</td></tr>
+    </table>
+  </div>
+
+  <div class="card" id="skills">
+    <h2>My Skills</h2>
+    <ul>
+      <li>C++, C#, and Python</li>
+      <li>HTML, CSS, and basic JavaScript to create page layouts, responsive design, navigation, and user-friendly interfaces.</li>
+      <li>Adobe Illustrator and Figma to create a custom icons, interactive UI/UX wireframe,prototyping, creative concepts, digital illustration, visual composition, and color.</li>
+      <li>Adobe Illustrator and Figma to create a custom icons, interactive UI/UX wireframe,prototyping, creative concepts, digital illustration, visual composition, and color.</li>
+    </ul>
+  </div>
+
+  <div class="card" id="education">
+    <h2>Education</h2>
+    <table border="1">
+      <tr><th>School</th><th>School Level</th><th>Course/Strand</th><th>Address</th><th>Year</th></tr>
+      <tr><td>College of Sciences, Technology, and Communication Inc.</td><td>College</td><td>BS Information Technology</td><td>Sariaya,Quezon</td><td>ONGOING | 2025 - Present</td></tr>
+      <tr><td>Tayabas Western Academy</td><td>Senior High School</td><td>STEM</td><td>Candelaria, Quezon</td><td>2025</td></tr>
+      <tr><td>Tayabas Western Academy</td><td>Junior High School</td><td>NA</td><td>Candelaria, Quezon</td><td>2023</td></tr>
+      <tr><td>Candelaria Elementary School-Main</td><td>Elementary</td><td>NA</td><td>Candelaria, Quezon</td><td>2019</td></tr>
+    </table>
+  </div>
+
+  <div class="card" id="awards">
+    <h2>Awards and Excellence</h2>
+    <h4>Academic:</h4>
+    <ul>
+      <li>Special Award, Day Care</li>
+      <li>With Initiative Award, Kinder</li>
+      <li>Top 4, Grade 2</li>
+      <li>Top 1, Grade 3</li>
+      <li>Top 2, Grade 4</li>
+      <li>Top 2, Grade 5</li>
+      <li>Top 2, Grade 6</li>
+      <li>Consistent With Honors, Grade 8 - 12</li>
+      <li>Outstanding Student in Capstone Project in the Field of Science</li>
+    </ul>
+    <h4>Non-academic:</h4>
+    <ul>
+      <li>KabScout Gawad ng Pagkilala, Grade 3</li>
+      <li>Candidate in Mr. and Ms. CES-Main, Grade 4-6</li>
+      <li>Yes-O Candidate in Mr. and Ms., Grade 5</li>
+      <li>Best in Casual Wear and Best in Sunday Attire, Grade 5(Mr. and Ms. CES-Main)</li>
+    </ul>
+  </div>
+
+  <div class="card" id="hobbies">
+    <h2>Hobbies</h2>
+    <ul>
+      <li>Badminton</li>
+      <li>Sketching</li>
+      <li>Online Games</li>
+      <li>Watching Anime</li>
+    </ul>
+    <h2>Inspiration</h2>
+    <ul>
+      <li>Inspired by: Exploring visual ideas,character concepts, and creative styles. Practicing code and turning small ideas into working pages. Finding inspiration in game interface, stories, design, and digital world.Discovering tools and techniques that helps me to improve. My family, my girlfriend, and my personal goals in life.</li>
+    </ul>
+  </div>
+
+  <div class="card" id="experience">
+    <h2>Work Experience</h2>
+      <h3>Work Immersion - Lady Dianne Tarpulin Printing & Digital Studio | Candelaria, Quezon | February 26, 2025 - March 11, 2025</h3>
+      <p>Editing in Photoshop, printing tarpulin, teach how to take a picture in studio, and helping them in other task. I gained skill like communicating, trust, and teamwork. In the workplace, do not be afraid to make mistakes; be afraid if you do not try at all. It's okay to make mistakes, because they can lead us to opportunities and learning.</p>
+  </div>
+
+  <div class="card" id="projects">
+    <h2>Projects Accomplished</h2>
+    <div class="row">
+      <div class="item">
+        <h2 class="ph">HTML • CSS • JAVASCRIPT</h2>
+        <h4>Website Project</h4>
+        <a class="btn" href="web.html">See More</a>
+      </div>
+      <div class="item">
+        <h2 class="ph">DIGITAL ART</h2>
+        <h4>Digital Artwork</h4>
+        <a class="btn" href="digital.html">See More</a>
+      </div>
+      <div class="item">
+        <h2 class="ph">GRAPHIC DESIGN</h2>
+        <h4>Posters, PubMats, and Social Media Graphics</h4>
+        <a class="btn" href="graphic.html">See More</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="card" id="special">
+    <h2>Special Corner</h2>
+    <p>Want a paper copy of my portfolio? Click the button to print it.</p>
+    <button class="btn" onclick="printPage()">Print Portfolio</button>
+  </div>
+
+  <div id="footer">
+    <h2 id="contact">Contact Me</h2>
+    <p>Number: 097542707472 / 09062185648</p>
+    <div class="social">
+      <a href="herreramejherry147@gmail.com" target="_blank">
+        <img class="icon-email" src="icons/gmail.svg" alt="Email">
+      </a>
+      <a href="https://www.facebook.com/share/1CQD85JZvZ/" target="_blank">
+        <img class="icon-fb" src="icons/facebook.svg" alt="Facebook">
+      </a>
+      <a href="https://www.instagram.com/mejjiieee_hth?mdxt=MXU0eDJyMG51aW0wZQ==" target="_blank">
+        <img class="icon-ig" src="icons/instagram.svg" alt="Instagram">
+      </a>
+      <a href="https://www.tiktok.com/@mejjiieee?_r=1&_t=ZS-9B745fjl1ul" target="_blank">
+        <img class="icon-tt" src="icons/tiktok.svg" alt="TikTok">
+      </a>
+    </div>
+    <hr>
+    <p>&copy; 2026 Mejie. All rights reserved.</p>
+  </div>
+
+  <div id="themeStyle"></div>
+  <script src="script.js"></script>
+</body>
+</html>
