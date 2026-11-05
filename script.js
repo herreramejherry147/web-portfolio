@@ -1,4 +1,3 @@
-
 var isDark = false;
 
 function toggleTheme() {
@@ -27,6 +26,8 @@ function toggleTheme() {
     darkCss += ".menu a:hover { background-color: #07102a; color: #22c55e; }";
     darkCss += ".menubtn:hover { color: #22c55e;}";
     darkCss += "#footer { background-color: #07102a; color: #e6eefc; }";
+    darkCss += "#footer a { color: #8ec5ff; }";
+    darkCss += "#footer h3 { color: #8ec5ff; }";
     darkCss += ".submenu { background-color: #1e3a8a; }";
     darkCss += ".submenu a:hover {color: #22c55e; }";
     darkCss += "#themeBtn { background-color: #14532d; }";
@@ -42,7 +43,7 @@ function toggleTheme() {
 }
 
 function sayHello() {
-  window.alert("Hi! Thanks for visiting my portfolio. Feel free to contact me below!");
+  window.alert("Hi! Thanks for visiting my portfolio. Feel free to see what's inside my portfolio, and if you have a concern don't hesitate to contact me below!");
 }
 
 function printPage() {
