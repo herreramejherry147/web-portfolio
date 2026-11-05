@@ -8,7 +8,7 @@ body {
   font-family: 'Trebuchet MS', Arial, sans-serif; 
   background-color: #92cc78; 
   color: #111111; 
-  line-height: 1.6; 
+  line-height: 1.6;
 }
 
 a { 
@@ -22,12 +22,6 @@ h2 {
   margin: 0 0 12px 0; 
   text-transform: uppercase; 
   letter-spacing: 3px; 
-}
-
-#contact{
-  text-align: center;
-  color: #ffffff;
-  text-decoration: none;
 }
 
 hr {
@@ -169,7 +163,7 @@ color: #8ec5ff;
 
 .avatar { 
   width: 150px; 
-  height: 150px; 
+  height: auto; 
   border-radius: 15%; 
   border: none; 
   margin: 0 auto 15px auto; 
@@ -182,11 +176,11 @@ color: #8ec5ff;
 
 .avatar:hover {
   width: 165px;
-  height: 165px;
+  height: auto;
 }
 
 .card { 
-  width: 90%; 
+  width: auto; 
   margin: 30px auto; 
   padding: 25px; 
   background-color: #ffffff; 
@@ -250,6 +244,29 @@ td{
   color: #ffffff; 
   text-align: center; 
   padding: 25px 5%; 
+}
+
+#footer a {
+  color: bbf7d0;
+}
+
+#footer h3 {
+  color: #86efac;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-bottom: 8px;
+}
+
+.footcols {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  text-align: left;
+}
+
+.footcol {
+  width: 30%;
+  margin-bottom: 20px;
 }
 
 .work { 
@@ -316,13 +333,39 @@ td{
   border-radius: 10px;  
 }
 
+@media (min-width: 1200px) {
+  .card { width: 80%; margin: 30px auto; }
+  #home { padding: 70px 10%; }
+}
+
+@media (max-width: 1024px) {
+  .item { width: 48%; }
+  .footcol { width: 48%; }
+  #home h1 { font-size: 2rem; }
+}
+ 
+@media (max-width: 768px) {
+  #home { padding: 40px 5%; }
+  .card { padding: 18px; }
+}
+ 
 @media (max-width: 700px) {
   body { font-size: 0.85rem; }
   #navbar { flex-direction: column; }
+  .logo { font-size: 1.2rem; text-align: center; margin-bottom: 6px; }
   .menu { justify-content: center; }
+  .menu a, .menubtn { padding: 10px 12px; margin: 2px; }
   .item { width: 100%; }
+  .footcol { width: 100%; text-align: center; }
   #home h1 { font-size: 1.7rem; }
-  .card { padding: 15px; }
+  .avatar-box { width: 140px; height: 140px; }
+  .avatar { width: 120px; }
+  .avatar:hover { width: 132px; }
+  .card { padding: 15px; margin: 20px 4%; }
   th, td { padding: 4px; font-size: 0.8rem; }
-  .bigph { height: 250px; }
+}
+ 
+@media (max-width: 360px) {
+  th, td { padding: 3px; font-size: 0.7rem; }
+  .menu a, .menubtn { padding: 8px; }
 }
